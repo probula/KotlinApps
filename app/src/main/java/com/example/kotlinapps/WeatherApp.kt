@@ -1,5 +1,7 @@
 package com.example.kotlinapps
 
+import kotlin.random.Random
+
 interface Weather{
     fun wyswietl(): String;
 }
@@ -21,6 +23,15 @@ class Clody : Weather{
         return "pochmurno"
     }
 }
+
+fun losujPogode() : Weather{
+    return when(Random.nextInt(3)) { //losuje od 0 do 2 włącznie
+        0 -> Sunny()
+        1 -> Rainy()
+        else -> Clody()
+    }
+}
+
 
 fun main(){
 
