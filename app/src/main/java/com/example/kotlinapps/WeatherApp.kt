@@ -16,6 +16,12 @@ class Rainy : Weather{
     }
 }
 
+class Clody : Weather{
+    override fun wyswietl(): String {
+        return "pochmurno"
+    }
+}
+
 fun main(){
 
 }
