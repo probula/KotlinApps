@@ -10,6 +10,13 @@ class Coin : RollingTool{
     }
 }
 
+class Dice : RollingTool{
+    override fun roll() {
+        val liczba = (1..6).random()
+        println("Wylosowano: "+liczba)
+    }
+}
+
 fun main(){
 
 }
