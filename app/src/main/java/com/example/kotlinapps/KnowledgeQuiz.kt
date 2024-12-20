@@ -1,2 +1,4 @@
-package com.example.kotlinapps
-
+interface Pytanie {
+    fun zapytaj(): String
+    fun sprawdzOdpowiedz(odpowiedz: String): Boolean
+}
