@@ -32,6 +32,8 @@ fun losujPogode() : Weather{
     }
 }
 
+data class Miasto(val nazwa: String, val pogoda: Weather)
+
 
 fun main(){
 
