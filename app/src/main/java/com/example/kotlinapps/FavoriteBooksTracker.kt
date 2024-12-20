@@ -25,6 +25,11 @@ class Program {
 
     }
 
+    fun filtrujAutora() {
+        println("Podaj jakiego autora maja byc ksiazki")
+        val autor = readln().lowercase()
+        println(ksiazki.filter { aKsiazki -> aKsiazki.contains(autor) })
+    }
 
 }
 
