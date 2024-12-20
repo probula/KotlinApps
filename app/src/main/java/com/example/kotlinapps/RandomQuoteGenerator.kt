@@ -21,3 +21,20 @@ object Quotes { //Singleton
         quotesList.add(cytat)
     }
 }
+
+fun main(){
+    println("Czy chcesz dodać cytat do list?: wpisz 'tak' lub 'nie': ")
+    val wybor = readln()
+
+    if(wybor == "tak"){
+        Quotes.addQuote()
+        println("Losuje z: " + Quotes.quotesList)
+        println("Wylosowany cytat: " + Quotes.getRandomQuote())
+    }
+    else if(wybor == "nie"){
+        println("Wylosowany cytat: " + Quotes.getRandomQuote())
+    }
+    else{
+        println("blad!")
+    }
+}
