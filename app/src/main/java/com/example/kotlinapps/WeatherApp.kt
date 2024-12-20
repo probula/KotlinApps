@@ -10,6 +10,12 @@ class Sunny : Weather{
     }
 }
 
+class Rainy : Weather{
+    override fun wyswietl(): String {
+        return "pada deszcz"
+    }
+}
+
 fun main(){
 
 }
