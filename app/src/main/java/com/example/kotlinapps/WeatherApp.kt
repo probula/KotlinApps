@@ -36,5 +36,23 @@ data class Miasto(val nazwa: String, val pogoda: Weather)
 
 
 fun main(){
+    val miasta = mutableListOf(
+        Miasto("olsztyn", losujPogode()),
+        Miasto("warszawa", losujPogode()),
+        Miasto("wrocław", losujPogode()),
+        Miasto("kraków", losujPogode()),
+        Miasto("poznań", losujPogode())
+    )
 
+    println("Wybierz miasto z listy: " + miasta.map { it.nazwa })
+    val wybor = readln().lowercase()
+
+    val wybraneMiasto = miasta.find { it.nazwa.lowercase() == wybor }
+
+    if (wybraneMiasto != null) {
+        println("W ${wybraneMiasto.nazwa} jest ${wybraneMiasto.pogoda.wyswietl()}")
+    }
+    else {
+        println("$wybor nie istnieje!")
+    }
 }
