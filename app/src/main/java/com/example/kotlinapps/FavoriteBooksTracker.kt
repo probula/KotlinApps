@@ -13,7 +13,7 @@ class Program {
             } else {
                 ksiazki.add(ksiazka)
                 println("Twoja lista zawiera ksiazki: " + ksiazki)
-
+                sortuj()
             }
         }
     }
@@ -31,6 +31,10 @@ class Program {
         println(ksiazki.filter { aKsiazki -> aKsiazki.contains(autor) })
     }
 
+    fun sortuj() {
+        ksiazki.sortBy { it.substringBefore(",").trim() }
+        println("Posortowane książki alfabetycznie po tytule: $ksiazki")
+    }
 }
 
 fun main(){
