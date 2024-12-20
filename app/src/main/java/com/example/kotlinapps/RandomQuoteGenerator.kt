@@ -14,4 +14,10 @@ object Quotes { //Singleton
         val randomIndex = Random.nextInt(quotesList.size)
         return quotesList[randomIndex]
     }
+
+    fun addQuote(){
+        println("Podaj cytat jaki chcesz dodac: ")
+        val cytat = readln()
+        quotesList.add(cytat)
+    }
 }
