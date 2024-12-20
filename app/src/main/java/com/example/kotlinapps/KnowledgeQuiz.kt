@@ -33,7 +33,11 @@ fun main() {
         PrawdaFalsz("Czy Lewandowski jest najlepszym piłkarzem na świecie?", true),
         WielokrotnyWybor("Ile goli strzelił Lewandowski w ciągu 9 min podczas meczu Bayernu Monachium przeciwko Wolfsburgowi w 2015 roku?",
             listOf("1. 5", "2. 1", "3. 4", "4. 3"), 1),
+        PrawdaFalsz("Czy 2 + 2 = 5?", false),
+        WielokrotnyWybor("Jaki jest najdłuższy rzeka na świecie?",
+            listOf("1. Nil", "2. Amazonka", "3. Missisipi", "4. Ganges"), 2)
     )
+
 
     Quiz(pytania)
 }
