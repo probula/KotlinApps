@@ -39,4 +39,9 @@ class Program {
 
 fun main(){
     val program = Program()
+
+    program.dodaj()
+    program.filtrujAutora()
+    program.filtrujRok()
+    program.sortuj()
 }
