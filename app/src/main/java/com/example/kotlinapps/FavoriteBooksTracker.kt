@@ -18,6 +18,14 @@ class Program {
         }
     }
 
+    fun filtrujRok() {
+        println("Podaj rok z ktorego maja byc ksiazki")
+        val rok = readln()
+        println(ksiazki.filter { rKsiazki -> rKsiazki.contains(rok) })
+
+    }
+
+
 }
 
 fun main(){
